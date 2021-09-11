@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tecnica.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tab">
+        <nav id="nav-bar">
+            <header>
+                <h3>
+                 HTML  Documentación
+                </h3>
+                <ul>
+            <li> <a href="#html" class="nav-link">¿Qué es el HTML?</a></li>
+            <li> <a href="#anatomia" class="nav-link">Anatomía de un elemento HTML</a> </li>
+            <li><a href="#atributo" class="nav-link">Atributos</a></li>
+            <li><a href="#documento" class="nav-link">Anatomía de un documento HTML</a></li>
+            <li><a href="#referencias" class="nav-link">Referencias a entidades </a></li>
+            <li><a href="#comentarios" class="nav-link">Comentarios </a></li>
+            <li><a href="#tablas" class="nav-link">Tablas</a></li>
+            <li><a href="#requisitos" class="nav-link">Requisitos Previos</a></li>
+            <li><a href="#guias" class="nav-link">Guias </a></li>
+            <li><a href="#resumen" class="nav-link">Resumen</a></li>
+
+        </ul>
+            </header>
+        </nav>
+    </div>
+<main id="main-doc">
+ <section id="html" class="main-section" >
+   <a href="#html"></a>
+    <header> <h1>HTML ("Hypertext Markup Language") no es un lenguaje de programación.</h1></header>
+<p> Es un lenguaje de marcado que le dice a los navegadores web cómo estructurar las páginas web que estás visitando. Puede ser tan complejo o tan simple como desee el desarrollador web. El HTML consiste 
+    en una serie de elementos, que puedes utilizar para encerrar, delimitar o marcar diferentes partes del contenido para hacer que aparezcan de una cierta manera, o actúen de determinada forma. 
+    Las etiquetas que delimitan un fragmento de contenido pueden hacer que dicho contenido enlace con otra página
+    , ponga una palabra en cursiva, etcétera. Por ejemplo, dada la siguiente línea de contenido:
+   
+<code> <h1>MI GATO ES GRUÑON</h1></code>
+    </p>
+ </section>
+ <section id="anatomia" class="main-section">
+    
+
+  <h1> Anatomía de un elemento HTML</h1>
+
+<p>Las principales partes de nuestro elemento son:
+La etiqueta de apertura: consiste en el nombre del elemento (en este caso, p), encerrado entre 
+paréntesis angulares de apertura y cierre. Esta etiqueta de apertura marca dónde comienza el 
+    elemento o comienza a tener efecto. En este ejemplo, precede al comienzo del texto del párrafo.
+    El contenido: Este es el contenido del elemento. En este ejemplo, es el texto del párrafo.
+    La etiqueta de cierre: Es lo mismo que la etiqueta de apertura, excepto que incluye una barra diagonal
+     antes del nombre del elemento. Esto indica dónde termina el elemento; en este caso, dónde finaliza el
+      párrafo. No incluir una etiqueta de cierre es un error común de principiante, y puede conducir a extraños resultados.
+    El elemento lo conforman la etiqueta de apertura, seguida del contenido, seguido de la etiqueta de cierre.</p>
+</section>
+<section  id="atributo" class="main-section">
+    <a href="#atributo"></a>
+    <h1>Atributos</h1>
+    <p>Los elementos también pueden tener atributos. Los atributos tienen este aspecto:
+
+        atributo html
+        <code><p class="editor-note"> Mi gato es gruñon</p></code>
+        Los atributos contienen información extra sobre el elemento que no se mostrará en el contenido. En este caso, el atributo class asigna al elemento un identificador que se puede utilizar para dotarlo de información de estilo.
+        
+        Un atributo debería tener:
+        
+        Un espacio entre este y el nombre del elemento. (Para un elemento con más de un atributo, los atributos también deben estar separados por espacios).
+        El nombre del atributo, seguido por un signo igual.
+        Un valor del atributo, rodeado de comillas de apertura y cierre.</p>
+</section>
+<section id="documento"  class="main-section">
+    <a href="#documento"></a>
+    <header>
+        <h1> Anatomía de un documento HTML</h1>
+    </header>
+    <p>Los elementos HTML no son muy útiles por sí mismos. Ahora veremos cómo combinar los elementos
+         individuales para formar una página HTML completa:
+        <code>
+                <title>Mi página de prueba</title>
+              </head>
+              <body>
+                <p>Esta es mi página</p>
+              </body>
+            </html></code></p>
+            <p>Aquí tenemos:
+     <code> <!DOCTYPE html>: </code>  El elemento doctype. En sus inicios, cuando el HTML llevaba poco tiempo
+                 (alrededor de 1991-1992), los doctypes servían como enlaces al conjunto de reglas que la 
+                 página HTML debía seguir para que fuera considerado buen HTML. 
+                Un elemento doctype de aquella época podía parecerse a esto:</p>
+</section>
+<section  id="referencias" class="main-section">
+    <a href="#referencias"></a>
+<header>
+    <h1>Referencias a entidades :Inclusión de caracteres especiales en HTML</h1>
+</header>
+<p> En HTML, los caracteres <, >,",' y & son caracteres especiales. 
+    Forman parte de la sintaxis HTML. Entonces, ¿cómo incluye uno de estos caracteres especiales en tu texto? 
+    Por ejemplo, si deseas utilizar un signo comercial o menor que, y no hacer que se interprete como código.
+
+    Haces esto con referencias de caracteres. Estos son códigos especiales que representan caracteres, para ser usados en estas circunstancias exactas.
+     Cada referencia de caracter comienza con un signo de ampersand (&) y finaliza con un punto y coma (;).</p>
+<code><p>En HTML, defines un párrafo con el elemento <p>.</p>
+
+    <p>En HTML, defines un párrafo con el elemento &lt;p&gt;.</p></code>
+
+</section>
+<section  id="comentarios" class="main-section">
+    <a href="#comentarios"></a>
+<header>
+    <h1>Comentarios</h1>
+</header>
+<p>En HTML hay un mecanismo para escribir comentarios en el código. Los comentarios son
+     ignorados por el navegador y, por tanto, son invisibles para el usuario. El propósito de los 
+     comentarios es permitirte incluir notas en el código para explicar tu lógica o codificación. 
+     Esto es muy útil si regresas a un código base después de estar ausente el tiempo suficiente como para 
+     no recordarlo por completo. Del mismo modo, los comentarios son invaluables ya que diferentes personas 
+     están realizando cambios y actualizaciones.
+
+    Para convertir en un comentario una sección de contenido de tu archivo HTML, debes delimitarlo con los
+     marcadores especiales <!-- y -->. Por ejemplo:</p>
+     <code><p>No soy un comentario</p>
+
+        <!-- <p>¡Yo sí!</p> --></code>
+
+</section>
+<section  id="tablas" class="main-section">
+    <a href="#tablas"></a>
+<header>
+    <h1>Tablas</h1>
+</header>
+ <p>
+    Una tarea muy común en HTML es la estructuración de datos, y para esto hay múltiples
+     elementos y atributos. Esto unido a un poco de CSS, hace que en HTML sea sencillo mostrar tablas con 
+     información sobre tu horario escolar, los horarios de una piscina local o las estadisticas de tu equipo de dinosaurios o fútbol preferido. 
+    Este módulo te guiará en todo lo que necesitas saber sobre la estructuración tabular de datos en HTML.
+ </p>
+</section>
+<section  id="requisitos" class="main-section">
+    <a href="#requisitos"></a>
+<header>
+    <h1>Requisitos Previos</h1>
+</header>
+ <p>
+    Antes de comenzar este módulo, deberías de saber las cosas básicas de HTML — ver Introducción a HTML.
+ </p>
+</section>
+<section  id="guias" class="main-section">
+    <a href="#guias"></a>
+<header>
+    <h1>Guias</h1>
+</header>
+<p>
+    Este módulo contiene los siguientes artículos:
+
+    Comenzando con tablas HTML
+    Este artículo te introduce en las tablas HTML , cubriendo las cosas más basicas como las líneas y las celdas,
+     encabezados, crear celdas de multiples líneas y columnas, y como agrupar todas las celdas en una columna con 
+     fines estilisticos.
+    Características avanzadas y accesibilidad en tablas HTML
+    En el segundo artículo de este módulo, veremos algunas características avanzadas de las tablas HTML — como 
+    subtítulos/resumenes y agrupar líneas en la cabeza, cuerpo y pie de la tabla — además de realizar tablas 
+    accesibles para aquellos usuarios con problemas de visión.
+</p>
+
+   
+
+</section>
+<section  id="resumen" class="main-section">
+    <a href="#resumen"></a>
+<header>
+    <h1>RESUMEN</h1>
+</header>
+<p>
+    Has llegado al final del artículo. Espero que hayas disfrutado del recorrido los conceptos básicos del HTML.
+    En este punto ya deberías entender el lenguaje, cómo funciona en un nivel básico y deberías poder escribir 
+    algunos elementos y atributos. También deberías poder escribir algunos elementos y atributos. Los artículos posteriores de este
+     módulo profundizan en algunos de los temas aquí presentados, además de presentar otros conceptos del lenguaje.
+</p>
+    
+
+  </main>
+    
+</body>
+</html>

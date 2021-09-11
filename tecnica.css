@@ -1,0 +1,60 @@
+body {
+    background-color:white ;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+}
+#tab {
+    width: 250px;
+    height: 100%;
+    font-size: 30px;
+    background-color:white;
+    text-align: start;
+    color: black;
+    padding: 15px;
+    position: fixed;
+    cursor: pointer;
+    border-style: outset;
+    overflow-y:auto ;
+    overflow-x: hidden; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+ #main-doc {
+    max-width: 1100px;
+    margin: 30px;
+    width: 70%;
+    position: relative;
+    align-items: center;
+    float: right;
+    color: midnightblue;
+    }
+.nav-link {
+   text-decoration: none;
+   
+    
+}
+
+ li {
+    list-style-type: none;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    text-align: start;
+}
+code {
+    background-color: lightgray;
+}
+@media screen and (max-width: 700px) {
+    #tab {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    #main-doc {
+        width: 80%;
+        position: static;
+        text-align: center;
+    }
+}
+
